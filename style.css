@@ -6,16 +6,24 @@
     color: white;
     transform: translateY(80px);
     font-size: 40px;
+
+    position: relative;
+
+
+    
+
 }
 
 .Btxt{
     font-size: 20px;
-    background-color: transparent;
+
 
 }
 body{
 
     background-image: url(BG1.png);
+
+
 }
 a.button{
     display: inline-block;
@@ -28,6 +36,7 @@ a.button{
     border-radius: 7px;
     text-decoration: none;
     font-weight: 500;
+    transition: all 0.2s ease;
 
 }
   
@@ -37,4 +46,12 @@ a.button{
     color: rgba(255, 255, 255, 0.219);
     transform: translateY(340px);
    
+}
+
+header{
+    position: relative;
+    top: -80px;
+}
+a.button:hover{
+    background-color: rgb(196,196,196);  
 }

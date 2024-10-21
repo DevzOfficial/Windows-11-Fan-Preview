@@ -4,8 +4,13 @@
     font-family: "Rubik", sans-serif;
     text-align: center;
     color: white;
-    
 
+    position: relative;
+    min-width: 10px;
+    min-height: 10px;
+    display: flexbox;
+
+    align-items: center;
 }
 
 
@@ -14,49 +19,62 @@ body{
     background-image: url(BG1.png);
 
     
+
+    
+    display: inline-block;
+    max-width: 1920;
+    max-height: 1080;
 }
+
+
 
 .all{
     font-size: 20px;
-    display: flexbox;
+    display: flex;
     
-    width:1220px;
+    width:1200px;
     height:170px;
 
     padding: 15px;
     border-radius: 5px;
-    transform: translateX(230px);
+
+    align-items: center;
     background-color: rgba(0, 0, 0, 0.371);
-    
-
-
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .youtube{
-    transform: translateY(30px);
+    position: relative;
     border-radius: 10px;
     width:560px;
     height:315px;
 
     padding: 12px;
+    right: -100px;
 
 
     background-color: rgba(0, 0, 0, 0.371);
-
-    
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 
 .box{
     font-size: 15px;
     color: rgba(255, 255, 255, 0.735);
-    display: flexbox;
+    display: flex;
+    position: relative;
     
-    width:1220px;
-    height:500px;
+    width:1200px;
+    height:450px;
 
     padding: 15px;
     border-radius: 5px;
-    transform: translateX(230px);
+
     background-color: rgba(0, 0, 0, 0.371);
+
+    align-items: center;
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 a.button{
     position: relative;
@@ -69,31 +87,30 @@ a.button{
     text-decoration: none;
     text-align: center;
     transform: translateY(70px);
-    right: -100px;
-    top: -180px;
+    right: -260px;
+    top: -80px;
     font-weight: 500;
-
+    transition: all 0.2s ease;
 }
 
 .header{
-    width:1680px;
+    width:97.7%;
     height:10px;
 
     padding: 15px;
     border-radius: 5px;
     margin: 10px;
-
+    transform: translateX(-10px);
 
     background-color: rgba(0, 0, 0, 0.188);
-    transform: translateX(-8px);
-
-
-
-
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
 }
 .headertxt{
-    text-align: left;
+    text-align: right;
     transform: translateY(-20px);
+    position: relative;
+    display: flexbox;
 }
 
 footer{
@@ -104,8 +121,11 @@ footer{
     position: relative;
     width: 30px;
     transform: translateY(-62px);
-    right: -825px;
-    
-
-    
+    display: flex;
 }
+
+a.button:hover{
+    background-color: rgb(196, 196, 196);   
+}
+
+
